@@ -1,21 +1,17 @@
 
 // ==UserScript==
-// @name         Get the id
-// @version      1.3
-// @description  Just give me the fuking ID
+// @name         Get the log in console
+// @version      1.0
+// @description  = =
 // @author       NDM
-// @include      https://lol.moa.tw/summoner/show/*
+// @include      https://online-judge.tepd.tk/Game/my-history/*
 
-// @exclude      https://lol.moa.tw/summoner/
+// @exclude      https://online-judge.tepd.tk/Game/my-history/
 
 
 // @grant        unsafeWindow
 // ==/UserScript==
  
 (function() {
-            console.log(MoaObj.lol.acctId);
-            var NDMid = document.createElement("p");
-            NDMid.style.fontSize="45px";
-            NDMid.innerHTML= "GGC ID: "+MoaObj.lol.acctId;
-            document.getElementById("content-body").appendChild(NDMid);
+            console.log(document.getElementsByClassName("log-box")[0].value);
         })();
